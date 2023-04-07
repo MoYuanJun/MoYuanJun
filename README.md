@@ -60,10 +60,6 @@
 - ⛺️ I have a private site: [kunlunxu](https://kunlunxu.cc), you're welcome to come! ~
 - 📨 My email address is `moyuanjun@kunlunxu.cc` Welcome to contact me 👏🏻 ~
 
-<!-- - 🌱 I’m currently learning Hyperledger and Kubernetes   -->
-<!-- - ❓ Ask me about anything related to MERN stack and related technologies   -->
-<!-- - ⚡ Fun fact: I like to keep my night shift activated 24 x 7 -->
-  
 
 
 
