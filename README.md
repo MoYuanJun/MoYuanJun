@@ -1,8 +1,3 @@
-<h1 style="color: red;" align="center">Hi，ShenQingchuan here!</h1>
+<img align="right" alt="GIF" src="./bg.png" width="400"/>
 
-
-<div align="center">
-  <img align="right" src="./bg.png" height="162px" />
-</div>
-
-
+# Hi, MoYuanJun Here!
