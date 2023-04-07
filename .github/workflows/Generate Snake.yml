@@ -5,7 +5,10 @@ name: Generate Snake
 
 # 工作流触发时机, see: https://docs.github.com/zh/actions/using-workflows/triggering-a-workflow
 on:
-  watch:
+  push:
+    branches: 
+      - main  
+  
     types: started       # 监听事件, 当默认分支上有新提交触发
   schedule:
     - cron:  '0 0 * * *' # schedule 事件, 在指定时间触发工作流
