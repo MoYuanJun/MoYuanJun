@@ -4,13 +4,14 @@
 name: Generate Snake
 
 # 工作流触发时机, see: https://docs.github.com/zh/actions/using-workflows/triggering-a-workflow
+# 触发条件修改为：当 master 分支，有 push 的时候，执行任务
 on:
   push:
     branches: 
       - master  
   
   schedule:
-    - cron:  '0 0 * * *' # schedule 事件, 在指定时间触发工作流
+    - cron:  "0 0 * * *" 
 
 # 作业, see: https://docs.github.com/zh/actions/using-jobs/using-jobs-in-a-workflow
 jobs:
