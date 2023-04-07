@@ -46,6 +46,7 @@
 
 <!-- 背景图 -->
 <br />
+<br />
 <img align="right" alt="GIF" src="./bg.png" width="400"/>
 
 <!-- 关于我 -->
