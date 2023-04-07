@@ -1,0 +1,37 @@
+# 创建 Snake, see: https://github.com/Platane/snk
+
+# 工作流名称
+name: Generate Snake
+
+# 工作流触发时机, see: https://docs.github.com/zh/actions/using-workflows/triggering-a-workflow
+on:
+  watch:
+    types: started       # 监听事件, 当默认分支上有新提交触发
+  schedule:
+    - cron:  '0 0 * * *' # schedule 事件, 在指定时间触发工作流
+
+# 作业, see: https://docs.github.com/zh/actions/using-jobs/using-jobs-in-a-workflow
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 使用 actions/checkout, see: https://github.com/actions/checkout
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # 使用 Platane/snk 生成图片, see: https://github.com/Platane/snk
+      - name: Generate Snake
+        uses: Platane/snk@v2
+        id: snake-gif
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          gif_out_path: ./assets/github-contribution-grid-snake.gif
+          svg_out_path: ./assets/github-contribution-grid-snake.svg
+
+      # 使用 EndBug/add-and-commit 提交代码, see: https://github.com/EndBug/add-and-commit
+      - name: Push to GitHub
+        uses: EndBug/add-and-commit@v9
+        with:
+          branch: main
+          message: 'Generate Contribution Snake'
