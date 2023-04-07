@@ -60,8 +60,9 @@
 - ⛺️ I have a private site: [kunlunxu](https://kunlunxu.cc), you're welcome to come! ~
 - 📨 My email address is `moyuanjun@kunlunxu.cc` Welcome to contact me 👏🏻 ~
 
-
-
+<div align="center">
+  <img src="./assets/github-contribution-grid-snake.svg" >
+</div>
 
 
 
