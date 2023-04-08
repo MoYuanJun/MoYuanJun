@@ -25,7 +25,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: assets/base_metrics.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ github.token }}
           user: MoYuanJun
           template: classic
           config_timezone: Asia/Shanghai
