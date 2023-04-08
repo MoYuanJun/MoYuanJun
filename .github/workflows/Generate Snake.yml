@@ -20,30 +20,10 @@ jobs:
       - name: Half-year calendar
         uses: lowlighter/metrics@latest
         with:
+          base: ""
           filename: assets/metrics.plugin.isocalendar.svg
           token: ${{ github.token }}
-          base: ""
           plugin_isocalendar: yes
-      - name: WakaTime
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.wakatime.svg
-          token: NOT_NEEDED
-          base: ""
-          plugin_wakatime: yes
-          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
-          plugin_wakatime_token: ${{ github.token }}
-          
-      - name: base_metrics
-        uses: lowlighter/metrics@latest
-        with:
-          filename: assets/base_metrics.svg
-          token: ${{ github.token }}
-          user: MoYuanJun
-          template: classic
-          plugin_lines: no
-          config_timezone: Asia/Shanghai
-          base: "header, activity, community, repositories, calendar, code"
   
   # 创建 Snake, see: https://github.com/Platane/snk
   github-Snake:
