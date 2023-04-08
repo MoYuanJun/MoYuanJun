@@ -41,6 +41,7 @@ jobs:
           token: ${{ github.token }}
           user: MoYuanJun
           template: classic
+          plugin_lines: no
           config_timezone: Asia/Shanghai
           base: "header, activity, community, repositories, calendar, code"
   
