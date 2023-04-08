@@ -29,10 +29,7 @@ jobs:
           user: MoYuanJun
           template: classic
           config_timezone: Asia/Shanghai
-          committer_message: ":rocket: chore: update metrics image"
-          base: "header, activity, community, repositories"
-          plugin_traffic: yes
-          plugin_lines: yes
+          base: "header, activity, community, repositories, calendar, code"
   
   # 创建 Snake, see: https://github.com/Platane/snk
   github-Snake:
