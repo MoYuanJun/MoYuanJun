@@ -13,6 +13,33 @@ on:
 
 # 作业, see: https://docs.github.com/zh/actions/using-jobs/using-jobs-in-a-workflow
 jobs:
+  juejin-posts:
+    runs-on: ubuntu-latest
+    steps:                    # 工作流步骤
+      # step 1. 获取源码
+      - name: Chekcout 🛎️             # 步骤名
+        uses: actions/checkout@master # 使用插件名 => https://github.com/actions/checkout
+
+      # step 2. 安装指定 node
+      - name: Use Node  📦              # 步骤名
+        uses: actions/setup-node@master # 使用插件名 => https://github.com/actions/setup-node
+        with: # 插件携带参数
+          node-version: '16' # 指定 node 版本
+
+      # step 3. 安装依赖 & 执行脚本
+      - name: Install and Render 🔧
+        run: |
+          npm install
+          node ./renderPosts.mjs
+
+      # 使用 EndBug/add-and-commit 提交代码, see: https://github.com/EndBug/add-and-commit
+      - name: Push to GitHub
+        uses: EndBug/add-and-commit@v9
+        with:
+          branch: main
+          default_author: github_actions
+          message: 'render renderPosts'
+
   # 生成统计图, see: https://github.com/lowlighter/metrics
   github-metrics:
     runs-on: ubuntu-latest
