@@ -24,6 +24,14 @@ jobs:
           token: ${{ github.token }}
           base: ""
           plugin_isocalendar: yes
+      - name: WakaTime
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.wakatime.svg
+          token: ${{ github.token }}
+          base: ""
+          plugin_wakatime: yes
+          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
           
       - name: base_metrics
         uses: lowlighter/metrics@latest
