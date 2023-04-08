@@ -26,11 +26,12 @@ jobs:
       # 使用 Platane/snk 生成图片, see: https://github.com/Platane/snk
       - name: Generate Snake
         uses: Platane/snk@v2
-        id: snake-gif
         with:
           github_user_name: ${{ github.repository_owner }}
-          gif_out_path: ./assets/github-contribution-grid-snake.gif
-          svg_out_path: ./assets/github-contribution-grid-snake.svg
+          outputs: |
+            assets/github-snake.svg
+            assets/github-snake-dark.svg?palette=github-dark
+            assets/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
 
       # 使用 EndBug/add-and-commit 提交代码, see: https://github.com/EndBug/add-and-commit
       - name: Push to GitHub
