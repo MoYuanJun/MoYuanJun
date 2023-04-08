@@ -24,8 +24,6 @@ jobs:
           filename: assets/metrics.plugin.isocalendar.svg
           token: ${{ github.token }}
           plugin_isocalendar: yes
-          plugin_traffic: yes
-          plugin_lines: yes
   
   # 创建 Snake, see: https://github.com/Platane/snk
   github-Snake:
