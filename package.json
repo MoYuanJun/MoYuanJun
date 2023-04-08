@@ -1,0 +1,23 @@
+{
+  "name": "moyuanjun",
+  "version": "1.0.0",
+  "description": "<!--    # 标题   # emoji 取自: http://emojihomepage.com/ --> <p align=\"center\">   <h1 height=\"200px\" align=\"center\">     God dag <img src=\"https://cdn.jsdelivr.net/gh/MaleWeb/picture/images/techblog/hi.gif\" width=\"25\">, I'm MoYuanJun   </h1>    <p align=\"center\">A Sometimes passion ✨ and sometimes idle 🥋 frontend developer from China 👨‍💻</p> </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoYuanJun/MoYuanJun.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoYuanJun/MoYuanJun/issues"
+  },
+  "homepage": "https://github.com/MoYuanJun/MoYuanJun#readme",
+  "dependencies": {
+    "jsdom": "^21.1.1"
+  }
+}
