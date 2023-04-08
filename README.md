@@ -47,7 +47,7 @@
 <!-- 背景图 -->
 <br />
 <br />
-<img align="right" alt="GIF" src="./bg.png" width="400"/>
+<img align="right" alt="GIF" src="./assets/bg.png" width="400"/>
 
 <!-- 关于我 -->
 <h2 height="200px" align="center">💬 About Me</h2>
@@ -60,9 +60,15 @@
 - ⛺️ I have a private site: [kunlunxu](https://kunlunxu.cc), you're welcome to come! ~
 - 📨 My email address is `moyuanjun@kunlunxu.cc` Welcome to contact me 👏🏻 ~
 
-<div align="center">
-  <img src="./assets/github-contribution-grid-snake.svg" >
-</div>
+<!-- 贪吃蛇 - 图片有 actions/Generate Snake 定时生成 -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/github-snake.svg" />
+  <img width="100%" alt="github-snake" src="./assets/github-snake.svg" />
+</picture>
+
+
+
 
 
 
