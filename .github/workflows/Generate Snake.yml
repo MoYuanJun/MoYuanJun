@@ -4,7 +4,7 @@
 name: Generate Snake
 
 # 工作流触发时机, see: https://docs.github.com/zh/actions/using-workflows/triggering-a-workflow
-# 触发条件修改为：当 master 分支，有 push 的时候，执行任务
+# 触发条件修改为: 当 main 分支有 push 操作 || 每天 0 点
 on:
   push:
     branches: 
@@ -21,7 +21,7 @@ jobs:
     steps:
       # 使用 actions/checkout, see: https://github.com/actions/checkout
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       # 使用 Platane/snk 生成图片, see: https://github.com/Platane/snk
       - name: Generate Snake
