@@ -1,5 +1,3 @@
-# 创建 Snake, see: https://github.com/Platane/snk
-
 # 工作流名称
 name: Generate Snake
 
@@ -15,7 +13,25 @@ on:
 
 # 作业, see: https://docs.github.com/zh/actions/using-jobs/using-jobs-in-a-workflow
 jobs:
-  build:
+  # 生成统计图, see: https://github.com/lowlighter/metrics
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: base_metrics
+        uses: lowlighter/metrics@latest
+        with:
+          filename: assets/base_metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: MoYuanJun
+          template: classic
+          config_timezone: Asia/Shanghai
+          committer_message: ":rocket: chore: update metrics image"
+          base: "header, activity, community, repositories"
+          plugin_traffic: yes
+          plugin_lines: yes
+  
+  # 创建 Snake, see: https://github.com/Platane/snk
+  github-Snake:
     runs-on: ubuntu-latest
 
     steps:
