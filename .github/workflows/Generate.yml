@@ -27,11 +27,13 @@ jobs:
           node-version: '16' # 指定 node 版本
 
       # step 3. 安装依赖 & 执行脚本
+#       - name: Install and Render 🔧
+#         run: |
+#           npm install
+#           node ./renderPosts.mjs
       - name: Install and Render 🔧
-        run: |
-          npm install
-          node ./renderPosts.mjs
-
+        uses: KunLunXu-CC/juejin-posts-action@v1
+  
       # 使用 EndBug/add-and-commit 提交代码, see: https://github.com/EndBug/add-and-commit
       - name: Push to GitHub
         uses: EndBug/add-and-commit@v9
