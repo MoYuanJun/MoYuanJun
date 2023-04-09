@@ -32,7 +32,7 @@ jobs:
 #           npm install
 #           node ./renderPosts.mjs
       - name: Install and Render 🔧
-        uses: KunLunXu-CC/juejin-posts-action@v1
+        uses: KunLunXu-CC/juejin-posts-action@master
   
       # 使用 EndBug/add-and-commit 提交代码, see: https://github.com/EndBug/add-and-commit
       - name: Push to GitHub
