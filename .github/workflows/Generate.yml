@@ -24,7 +24,7 @@ jobs:
       - name: Append Juejin Posts List🔧
         uses: KunLunXu-CC/juejin-posts-action@main
         with: 
-          user_id: 940837680722589
+          user_id: 4459274891717223
   
       # 使用 EndBug/add-and-commit 提交代码, see: https://github.com/EndBug/add-and-commit
       - name: Push to GitHub
@@ -32,7 +32,7 @@ jobs:
         with:
           branch: main
           default_author: github_actions
-          message: 'render renderPosts'
+          message: 'juejin-posts'
 
   # 生成统计图, see: https://github.com/lowlighter/metrics
   github-metrics:
