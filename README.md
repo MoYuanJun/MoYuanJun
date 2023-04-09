@@ -60,40 +60,30 @@
 - ⛺️ I have a private site: [kunlunxu](https://kunlunxu.cc), you're welcome to come! ~
 - 📨 My email address is `moyuanjun@kunlunxu.cc` Welcome to contact me 👏🏻 ~
 
-<!-- 贪吃蛇 - 图片有 actions/Generate Snake 定时生成 -->
+<!-- 贪吃蛇, 由工作流定时生成 -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/github-snake.svg" />
   <img width="100%" alt="github-snake" src="./assets/github-snake.svg" />
 </picture>
 
-<!-- 统计卡片, see: https://github.com/anuraghazra/github-readme-stats -->
+<!-- 活动 -->
+<h3 align="center">Activities</h3>
 <table align="center">
   <tr>
     <td align="center">
       <div><b><em><spam>Statistics</spam></em></b></div>
+      <!--    由工作流定时生成     -->
       <img align="left" src="./assets/metrics.plugin.isocalendar.svg" />
+      <img src="https://github-readme-stats.vercel.app/api?username=anuraghazra&hide_border=true&show_icons=true&theme=dark&bg_color=00000000"/>
     </td>
     <td align="left">
-      <img src="https://github-readme-stats.vercel.app/api?username=anuraghazra&hide_border=true&show_icons=true&theme=dark&bg_color=00000000"/>
+      <div align="center"><b><em><spam>Article</spam></em></b></div>
+      <!--    由工作流定时生成     -->
+      <!-- posts start -->
+      <!-- posts end -->
     </td>
   </tr>
 </table>
 
-<!-- posts start -->
-<ul>
-<ul>
-<li>[3天前] <a href="https://juejin.cn/post/7218698736813178938">🔥 关于 JS 中 Set 的长篇大论 🔥</a></li>
-<li>[6天前] <a href="https://juejin.cn/post/7217459018238705724">「我不知道的 JS」 相等性判断 🔥🔥🔥🔥</a></li>
-<li>[10天前] <a href="https://juejin.cn/post/7215977393696620603">🔥 关于 JS 中 Map 的长篇大论 🔥</a></li>
-<li>[20天前] <a href="https://juejin.cn/post/7212270321622286394">在 Koa 中基于 gpt-3.5 模型实现一个最基本的流式问答 DEMO</a></li>
-<li>[24天前] <a href="https://juejin.cn/post/7210756376310284349">log4js 在「昆仑虚」中的实践</a></li>
-<li>[27天前] <a href="https://juejin.cn/post/7209653045310521404">【Echarts 实战录】常见问题 (二)</a></li>
-<li>[1月前] <a href="https://juejin.cn/post/7207090090101866557">八股文: 讲讲什么是浅拷贝、深拷贝?</a></li>
-<li>[1月前] <a href="https://juejin.cn/post/7204668263287046181">迭代器、生成器详解🔥🔥🔥</a></li>
-<li>[1月前] <a href="https://juejin.cn/post/7201892702182375485">【Echarts 实战录】常见问题 (一)</a></li>
-<li>[1月前] <a href="https://juejin.cn/post/7198388410381271096">原型、原型链</a></li>
-</ul>
 
-</ul>
-<!-- posts end -->
