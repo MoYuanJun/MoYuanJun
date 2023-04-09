@@ -36,6 +36,7 @@ jobs:
 
   # 生成统计图, see: https://github.com/lowlighter/metrics
   github-metrics:
+    needs: [juejin-posts]
     runs-on: ubuntu-latest
     steps:
       - name: metrics-Half-year-calendar
@@ -48,6 +49,7 @@ jobs:
   
   # 创建 Snake, see: https://github.com/Platane/snk
   github-Snake:
+    needs: [juejin-posts, github-metrics]
     runs-on: ubuntu-latest
 
     steps:
