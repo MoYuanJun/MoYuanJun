@@ -82,5 +82,8 @@
 
 <!-- posts start -->
 <ul>
+<ul>
+</ul>
+
 </ul>
 <!-- posts end -->
