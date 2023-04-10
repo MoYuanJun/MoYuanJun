@@ -14,12 +14,15 @@ on:
 jobs:
   # 使用 actions/checkout, see: https://github.com/actions/checkout
   checkout:
-    - name: Checkout
-      uses: actions/checkout@v3
+    runs-on: ubuntu-latest    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
 
   # 插入掘金列表, 使用 KunLunXu-CC/juejin-posts-action 生成文章列表, see: https://github.com/KunLunXu-CC/juejin-posts-action
   juejin-posts: 
-    nodes: [checkout]
+    needs: [checkout]
+    runs-on: ubuntu-latest
     steps:
       - name: Append Juejin Posts List🔧
         uses: KunLunXu-CC/juejin-posts-action@main
@@ -28,7 +31,8 @@ jobs:
   
   # 成统计图, see: https://github.com/lowlighter/metrics
   github-metrics: 
-    nodes: [checkout]
+    needs: [checkout]
+    runs-on: ubuntu-latest
     steps:
       - name: metrics-Half-year-calendar
         uses: lowlighter/metrics@latest
@@ -40,7 +44,8 @@ jobs:
   
   # 创建 Snake, 用 Platane/snk 生成图片, see: https://github.com/Platane/snk
   github-Snake: 
-    nodes: [checkout]
+    needs: [checkout]
+    runs-on: ubuntu-latest
     steps:
       - name: Generate Snake
         uses: Platane/snk@v2
@@ -53,7 +58,8 @@ jobs:
 
   # step 2. 使用 EndBug/add-and-commit 提交代码, see: https://github.com/EndBug/add-and-commit
   push:
-    nodes: [juejin-posts, github-metrics, github-Snake]
+    runs-on: ubuntu-latest
+    needs: [juejin-posts, github-metrics, github-Snake]
     steps:
       - run: |
           git pull
