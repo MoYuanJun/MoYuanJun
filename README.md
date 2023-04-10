@@ -1,8 +1,4 @@
-
-<!-- 
-  # 标题
-  # emoji 取自: http://emojihomepage.com/
--->
+<!-- 标题 + 个人描述, emoji 取自: http://emojihomepage.com -->
 <p align="center">
   <h1 height="200px" align="center">
     God dag <img src="https://cdn.jsdelivr.net/gh/MaleWeb/picture/images/techblog/hi.gif" width="25">, I'm MoYuanJun
@@ -11,10 +7,9 @@
 </p>
 
 <!-- 
-  # 个人技术栈
-  # 小标签, 参考: https://shields.io/
-  # 所有可选 Logo 列表参考: https://github.com/simple-icons/simple-icons/blob/develop/slugs.md
-  # 链接格式: https://img.shields.io/badge/-{标签文本}-{标签背景色}?style={标签类型}&logo={标签前面 Logo}&logoColor={Logo 颜色}
+  技术栈标签, 小标签来自: https://shields.io/
+  1. shields 链接格式: https://img.shields.io/badge/-{标签文本}-{标签背景色}?style={标签类型}&logo={标签前面 Logo}&logoColor={Logo 颜色}
+  2. shields 可选 Logo 列表参考: https://github.com/simple-icons/simple-icons/blob/develop/slugs.md
 -->
 <div align="center">
   <img src="https://img.shields.io/badge/-CSS-ffa940?style=flat&logo=css3&logoColor=white">
@@ -50,7 +45,7 @@
 <img align="right" alt="GIF" src="./assets/bg.png" width="400"/>
 
 <!-- 关于我 -->
-<h2 height="200px" align="center">💬 About Me</h2>
+<h2 height="200px" align="center">🎉 About Me</h2>
 <br />
 
 - 🔭 I’m currently working on [DXY](https://dxy.com/)~
