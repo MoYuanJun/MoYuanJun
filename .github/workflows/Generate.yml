@@ -4,12 +4,11 @@ name: Generate
 # 工作流触发时机, see: https://docs.github.com/zh/actions/using-workflows/triggering-a-workflow
 # 触发条件修改为: 当 main 分支有 push 操作 || 每天 0 点
 on:
+  schedule:
+    - cron: '30 22 * * *'
   push:
     branches: 
       - main  
-  
-  schedule:
-    - cron:  "0 0 * * *" 
 
 # 作业, see: https://docs.github.com/zh/actions/using-jobs/using-jobs-in-a-workflow
 jobs:
