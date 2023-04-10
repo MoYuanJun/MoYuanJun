@@ -15,6 +15,7 @@ jobs:
 
   # 插入掘金列表, 使用 KunLunXu-CC/juejin-posts-action 生成文章列表, see: https://github.com/KunLunXu-CC/juejin-posts-action
   juejin-posts: 
+    runs-on: ubuntu-latest    
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -35,6 +36,7 @@ jobs:
   
   # 成统计图, see: https://github.com/lowlighter/metrics
   github-metrics: 
+    runs-on: ubuntu-latest    
     steps:
       - name: metrics-Half-year-calendar
         uses: lowlighter/metrics@latest
@@ -46,6 +48,7 @@ jobs:
   
   # 创建 Snake, 用 Platane/snk 生成图片, see: https://github.com/Platane/snk
   github-Snake: 
+    runs-on: ubuntu-latest    
     steps:
       - name: Generate Snake
         uses: Platane/snk@v2
