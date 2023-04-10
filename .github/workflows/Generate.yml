@@ -12,23 +12,29 @@ on:
 
 # 作业, see: https://docs.github.com/zh/actions/using-jobs/using-jobs-in-a-workflow
 jobs:
-  # 使用 actions/checkout, see: https://github.com/actions/checkout
-  checkout:
-    - name: Checkout
-      uses: actions/checkout@v3
 
   # 插入掘金列表, 使用 KunLunXu-CC/juejin-posts-action 生成文章列表, see: https://github.com/KunLunXu-CC/juejin-posts-action
   juejin-posts: 
-    nodes: [checkout]
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Append Juejin Posts List🔧
         uses: KunLunXu-CC/juejin-posts-action@main
         with: 
           user_id: "4459274891717223"
+      
+      - run: |
+          git pull
+      - name: Push to GitHub
+        uses: EndBug/add-and-commit@v9
+        with:
+          branch: main
+          default_author: github_actions
+          message: 'juejin-posts'
   
   # 成统计图, see: https://github.com/lowlighter/metrics
   github-metrics: 
-    nodes: [checkout]
     steps:
       - name: metrics-Half-year-calendar
         uses: lowlighter/metrics@latest
@@ -40,7 +46,6 @@ jobs:
   
   # 创建 Snake, 用 Platane/snk 生成图片, see: https://github.com/Platane/snk
   github-Snake: 
-    nodes: [checkout]
     steps:
       - name: Generate Snake
         uses: Platane/snk@v2
@@ -50,11 +55,7 @@ jobs:
             assets/github-snake.svg
             assets/github-snake-dark.svg?palette=github-dark
             assets/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-
-  # step 2. 使用 EndBug/add-and-commit 提交代码, see: https://github.com/EndBug/add-and-commit
-  push:
-    nodes: [juejin-posts, github-metrics, github-Snake]
-    steps:
+      
       - run: |
           git pull
       - name: Push to GitHub
@@ -62,4 +63,4 @@ jobs:
         with:
           branch: main
           default_author: github_actions
-          message: 'juejin-posts'
+          message: 'create github Snake'
