@@ -78,6 +78,7 @@
       <!-- posts start -->
 <ul>
 <ul>
+<li>[undefined] <a href="https://juejin.cn/post/7271974618565623865">扫盲: Intl 国际化命名空间</a></li>
 <li>[undefined] <a href="https://juejin.cn/post/7268216176411967542">CSS 实战录: 双栏、四等分、不等间距、自适应...</a></li>
 <li>[undefined] <a href="https://juejin.cn/post/7264921718429745188">从 classList 到 DOMTokenList: 简化类名管理的工具</a></li>
 <li>[undefined] <a href="https://juejin.cn/post/7262358127344746556">JS 面试合集(1 ~ 10)(2W字总结)</a></li>
@@ -87,7 +88,6 @@
 <li>[undefined] <a href="https://juejin.cn/post/7254901391956918329">随手记第一弹</a></li>
 <li>[undefined] <a href="https://juejin.cn/post/7248648256284901437">爆了爆了！！不出意外我的 OpenWrt 空间爆了！！！</a></li>
 <li>[undefined] <a href="https://juejin.cn/post/7246777426666930213">JavaScript 中四种常见的数据类型判断方法 🔥</a></li>
-<li>[undefined] <a href="https://juejin.cn/post/7246401806677442617">白嫖党 YYDS: 阿里云快速搭建 Stable Diffusion</a></li>
 </ul>
 
 </ul>
