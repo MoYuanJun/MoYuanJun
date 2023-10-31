@@ -34,7 +34,7 @@ jobs:
           default_author: github_actions
           message: 'juejin-posts'
   
-  # 成统计图, see: https://github.com/lowlighter/metrics
+  # 生成统计图, see: https://github.com/lowlighter/metrics
   github-metrics: 
     runs-on: ubuntu-latest    
     steps:
@@ -46,7 +46,7 @@ jobs:
           token: ${{ github.token }}
           plugin_isocalendar: yes
   
-  # 创建 Snake, 用 Platane/snk 生成图片, see: https://github.com/Platane/snk
+  # 生成 Snake 图(贪吃蛇), 用 Platane/snk 生成图片, see: https://github.com/Platane/snk
   github-Snake: 
     runs-on: ubuntu-latest    
     steps:
@@ -54,7 +54,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Generate Snake
-        uses: Platane/snk@v2
+        uses: Platane/snk@latest
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
